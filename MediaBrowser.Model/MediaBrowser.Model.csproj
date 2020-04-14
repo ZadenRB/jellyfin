@@ -37,4 +37,8 @@
     <CodeAnalysisRuleSet>../jellyfin.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
+  <ItemGroup>
+      <EmbeddedResource Include="Globalization\iso6392.txt" />
+  </ItemGroup>
+
 </Project>

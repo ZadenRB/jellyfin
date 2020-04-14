@@ -63,7 +63,7 @@ namespace MediaBrowser.Providers.Subtitles
         {
             if (request.Language != null)
             {
-                var culture = _localization.FindLanguageInfo(request.Language);
+                var culture = Cultures.Instance.FindLanguageInfo(request.Language);
 
                 if (culture != null)
                 {

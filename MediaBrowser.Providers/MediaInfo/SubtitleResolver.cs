@@ -161,7 +161,7 @@ namespace MediaBrowser.Providers.MediaInfo
 
                     // Try to translate to three character code
                     // Be flexible and check against both the full and three character versions
-                    var culture = _localization.FindLanguageInfo(language);
+                    var culture = Cultures.Instance.FindLanguageInfo(language);
 
                     if (culture != null)
                     {

@@ -341,7 +341,7 @@ namespace Emby.Server.Implementations.Library
                 return Array.Empty<string>();
             }
 
-            var culture = _localizationManager.FindLanguageInfo(language);
+            var culture = Cultures.Instance.FindLanguageInfo(language);
             if (culture != null)
             {
                 return culture.ThreeLetterISOLanguageNames;

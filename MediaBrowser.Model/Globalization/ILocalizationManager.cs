@@ -9,11 +9,6 @@ namespace MediaBrowser.Model.Globalization
     /// </summary>
     public interface ILocalizationManager
     {
-        /// <summary>
-        /// Gets the cultures.
-        /// </summary>
-        /// <returns><see cref="IEnumerable{CultureDto}" />.</returns>
-        IEnumerable<CultureDto> GetCultures();
 
         /// <summary>
         /// Gets the countries.
@@ -62,12 +57,5 @@ namespace MediaBrowser.Model.Globalization
         /// <param name="category">The unicode category.</param>
         /// <returns>Wether or not the string contains a character with the specified unicode category.</returns>
         bool HasUnicodeCategory(string value, UnicodeCategory category);
-
-        /// <summary>
-        /// Returns the correct <see cref="CultureInfo" /> for the given language.
-        /// </summary>
-        /// <param name="language">The language.</param>
-        /// <returns>The correct <see cref="CultureInfo" /> for the given language.</returns>
-        CultureDto FindLanguageInfo(string language);
     }
 }

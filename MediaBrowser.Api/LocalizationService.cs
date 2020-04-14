@@ -102,7 +102,7 @@ namespace MediaBrowser.Api
         /// <returns>System.Object.</returns>
         public object Get(GetCultures request)
         {
-            var result = _localization.GetCultures();
+            var result = Cultures.Instance.GetCultures();
 
             return ToOptimizedResult(result);
         }

@@ -62,7 +62,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Localization\iso6392.txt" />
     <EmbeddedResource Include="Localization\countries.json" />
     <EmbeddedResource Include="Localization\Core\*.json" />
     <EmbeddedResource Include="Localization\Ratings\*.csv" />
